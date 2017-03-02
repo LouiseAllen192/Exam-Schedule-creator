@@ -5,18 +5,20 @@ import java.util.concurrent.ThreadLocalRandom;
 public class Scheduler {
     public static void main(String[] args){
 
-        HashMap<String, Integer> inputs, timetable;
-        ArrayList<HashMap<String,Integer>> orderings;
+        HashMap<String, Integer> inputs;
+        ArrayList<HashSet<Integer>> studentModuleInfo;
+        ArrayList<int[][]> orderings;
+        ArrayList<Integer> fitnessCostsPerOrdering;
 
         inputs = requestInputs();
         if (inputs != null) {
-            timetable = generateStudentsTimeTable(inputs.get("S"), inputs.get("C"), inputs.get("M"));
-            orderings = generateOrderings(inputs, timetable);
+            studentModuleInfo = generateStudentModuleInfo(inputs.get("S"), inputs.get("C"), inputs.get("M"));
+            printStudentModuleInfo(studentModuleInfo);
 
-            for (int i = 0; i < orderings.size(); i++) {
-                printHmapContents(orderings.get(i));
-                System.out.println("\n\n");
-            }
+            orderings = generateOrderings(inputs);
+
+            fitnessCostsPerOrdering = calculateFitnessCostOfOrderings(orderings, studentModuleInfo);
+            printOrderings(orderings, fitnessCostsPerOrdering);
         }
     }
 
@@ -75,55 +77,95 @@ public class Scheduler {
         return true;
     }
 
-    private static HashMap<String,Integer> generateStudentsTimeTable(int numStudents, int numModulesPerCourse, int totalNumberOfModules) {
-        HashMap<String, Integer> timetable = new HashMap<String,Integer>();
+    private static ArrayList<HashSet<Integer>> generateStudentModuleInfo(int numStudents, int numModulesPerCourse, int totalNumberOfModules) {
+        ArrayList<HashSet<Integer>> studentModuleInfo = new ArrayList<>();
         for (int i = 0; i < numStudents; i++) {
+            HashSet<Integer> studentModules = new HashSet<>();
             for (int j = 0; j < numModulesPerCourse; j++) {
-                int rand =  getRandomNumberInRange(totalNumberOfModules, 1);
-                String key = "S" + (i + 1) + "M" + (j + 1);
-                timetable.put(key, rand);
+                boolean valid = false;
+                while(!valid) {
+                    int rand = getRandomNumberInRange(totalNumberOfModules, 1);
+                    if (!studentModules.contains(rand)) {
+                        valid = true;
+                        studentModules.add(rand);
+                    }
+                }
             }
+            studentModuleInfo.add(studentModules);
         }
-        return timetable;
+        return studentModuleInfo;
     }
 
-    private static ArrayList<HashMap<String,Integer>> generateOrderings(HashMap<String, Integer> inputs, HashMap<String, Integer> timetable) {
-        ArrayList <HashMap<String,Integer>> orderings = new ArrayList<HashMap<String,Integer>>();
+    private static ArrayList<int[][]> generateOrderings(HashMap<String, Integer> inputs) {
+        ArrayList <int[][]> orderings = new ArrayList<>();
         for (int i = 0; i < inputs.get("P"); i++) {
-            HashMap<String,Integer> ordering = createOrdering(inputs.get("D"), inputs.get("M"));
-            orderings.add(ordering);
+            boolean valid = false;
+            while(!valid) {
+                int[][] ordering = createOrdering(inputs.get("D"), inputs.get("M"));
+                if (!isOrderingAlreadyInOrderingsList(ordering, orderings)) {
+                    orderings.add(ordering);
+                    valid = true;
+                }
+            }
         }
         return orderings;
     }
 
-    private static HashMap<String, Integer> createOrdering(int numberOfExamDays, int totalNumberOfModules) {
+    private static int[][] createOrdering(int numberOfExamDays, int totalNumberOfModules) {
         int numberOfExamsPerDay = 2;
-        HashMap<String, Integer> ordering = new HashMap<String, Integer>();
-        ArrayList<Integer> alreadyScheduledExams = new ArrayList<>();
-        for (int i = 0; i < numberOfExamDays; i++) {
-            String dayCode = "Day" + (i + 1);
-            for(int j = 0; j < numberOfExamsPerDay; j++) {
-                String sessionCode = "Ses" + (j + 1);
-                String key = dayCode + sessionCode;
+        int[][] ordering = new int[numberOfExamDays][numberOfExamsPerDay];
 
+        HashSet<Integer> alreadyScheduledExams = new HashSet<>();
+        for (int i = 0; i < numberOfExamDays; i++) {
+            for(int j = 0; j < numberOfExamsPerDay; j++) {
                 boolean valid = false;
                 while (!valid && alreadyScheduledExams.size() <= totalNumberOfModules) {
-                    int rand = getRandomNumberInRange(totalNumberOfModules + 1, 1);
+                    int rand = getRandomNumberInRange(totalNumberOfModules, 1);
                     if (!alreadyScheduledExams.contains(rand)) {
                         alreadyScheduledExams.add(rand);
-                        ordering.put(key, rand);
+                        ordering[i][j] = rand;
                         valid = true;
                     }
                 }
-
             }
         }
-
         return ordering;
     }
 
+    private static boolean isOrderingAlreadyInOrderingsList(int[][] ordering, ArrayList<int[][]> orderings) {
+        for (int i = 0; i < orderings.size(); i++) {
+            if (Arrays.deepEquals(ordering, orderings.get(i))) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    private static ArrayList<Integer> calculateFitnessCostOfOrderings(ArrayList<int[][]> orderings, ArrayList<HashSet<Integer>> studentModuleInfo) {
+        ArrayList<Integer> fitnessCosts = new ArrayList<>();
+        for (int i = 0; i < orderings.size(); i++) {
+            fitnessCosts.add(fitnessFunction(orderings.get(i), studentModuleInfo));
+        }
+        return fitnessCosts;
+    }
+
+    private static int fitnessFunction(int[][] ordering, ArrayList<HashSet<Integer>> studentModuleInfo) {
+        int cost = 0;
+        for (int i = 0; i < ordering.length; i++) {
+            int session1 = ordering[i][0];
+            int session2 = ordering[i][1];
+
+            for (int studentId = 0; studentId < studentModuleInfo.size(); studentId++) {
+                if (studentModuleInfo.get(studentId).contains(session1) && studentModuleInfo.get(studentId).contains(session2)) {
+                    cost++;
+                }
+            }
+        }
+        return cost;
+    }
+
     private static int getRandomNumberInRange(int max, int min) {
-        return ThreadLocalRandom.current().nextInt(min, max);
+        return ThreadLocalRandom.current().nextInt(min, max + 1);
     }
 
     private static void printHmapContents(HashMap<String, Integer> hmap) {
@@ -136,13 +178,25 @@ public class Scheduler {
 
     }
 
-    class IntPair {
-        final int x;
-        final int y;
+    private static void printStudentModuleInfo(ArrayList<HashSet<Integer>> arr) {
+        for(int i = 0 ; i < arr.size(); i++) {
+                System.out.println(arr.get(i));
+        }
+    }
 
-        IntPair(int x, int y) {
-            this.x = x;
-            this.y = y;
+    private static void printOrderings(ArrayList<int[][]> ordering, ArrayList<Integer> fitnessCostsPerOrdering) {
+        for (int i = 0; i < ordering.size(); i++) {
+            int[][] x = ordering.get(i);
+
+            for (int j = 0; j < x.length; j++) {
+                for(int k = 0; k < x[j].length; k++) {
+                    System.out.print(x[j][k] + " ");
+                }
+                System.out.println();
+            }
+            System.out.println("Fitness Cost: " + fitnessCostsPerOrdering.get(i));
+            System.out.println();
+            System.out.println();
         }
     }
 
