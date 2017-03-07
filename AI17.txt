@@ -1,0 +1,28 @@
+Student 1: M2 M3 
+Student 2: M3 M4 
+Student 3: M2 M3 
+Student 4: M2 M3 
+
+Ord1:	M3    M2    : cost: 0
+		M1    M4    
+
+Ord2:	M4    M3    : cost: 0
+		M2    M1    
+
+Ord3:	M2    M1    : cost: 3
+		M3    M4    
+
+Ord4:	M2    M1    : cost: 0
+		M4    M3    
+
+Ord5:	M1    M3    : cost: 3
+		M4    M2    
+
+Ord6:	M3    M1    : cost: 1
+		M4    M2    
+
+Ord7:	M4    M3    : cost: 3
+		M1    M2    
+
+Ord8:	M3    M4    : cost: 3
+		M2    M1    
