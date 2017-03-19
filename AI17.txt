@@ -1,28 +1,204 @@
-Student 1: M2 M3 
-Student 2: M3 M4 
-Student 3: M2 M3 
-Student 4: M2 M3 
+Student 1: M2 M4 M6 M8 
+Student 2: M1 M3 M5 M6 
+Student 3: M1 M3 M4 M5 
+Student 4: M3 M4 M7 M8 
+Student 5: M2 M3 M4 M9 
+Student 6: M1 M6 M7 M9 
+Student 7: M1 M2 M4 M6 
+Student 8: M3 M5 M8 M10 
+Student 9: M2 M7 M9 M10 
+Student 10: M3 M4 M7 M10 
 
-Ord1:	M3    M2    : cost: 0
-		M1    M4    
+Ord1:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
 
-Ord2:	M4    M3    : cost: 0
-		M2    M1    
+Ord2:	M8    M7    M3    M10   M9    : cost: 5
+		M5    M1    M6    M2    M4    
 
-Ord3:	M2    M1    : cost: 3
-		M3    M4    
+Ord3:	M9    M3    M10   M4    M7    : cost: 6
+		M8    M1    M5    M6    M2    
 
-Ord4:	M2    M1    : cost: 0
-		M4    M3    
+Ord4:	M4    M9    M1    M6    M7    : cost: 7
+		M8    M3    M2    M5    M10   
 
-Ord5:	M1    M3    : cost: 3
-		M4    M2    
+Ord5:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
 
-Ord6:	M3    M1    : cost: 1
-		M4    M2    
+Ord6:	M8    M7    M3    M10   M9    : cost: 5
+		M5    M1    M6    M2    M4    
 
-Ord7:	M4    M3    : cost: 3
-		M1    M2    
 
-Ord8:	M3    M4    : cost: 3
-		M2    M1    
+
+
+Previous:
+
+Ord1:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
+
+Ord2:	M8    M7    M3    M1    M9    : cost: 5
+		M5    M10   M6    M2    M4    
+
+Ord3:	M9    M3    M10   M4    M7    : cost: 6
+		M8    M1    M5    M6    M2    
+
+Ord4:	M4    M9    M1    M6    M7    : cost: 7
+		M8    M3    M2    M5    M10   
+
+Ord5:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
+
+
+New:
+
+Ord1:	M8    M7    M3    M1    M9    : cost: 5
+		M5    M10   M6    M2    M4    
+
+
+
+
+
+
+Previous:
+
+Ord1:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
+
+Ord2:	M9    M3    M10   M4    M7    : cost: 6
+		M8    M1    M5    M6    M2    
+
+Ord3:	M4    M9    M1    M6    M7    : cost: 7
+		M8    M3    M2    M5    M10   
+
+Ord4:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
+
+
+New:
+
+Ord1:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord2:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+
+
+
+
+
+Previous:
+
+Ord1:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
+
+Ord2:	M9    M3    M10   M4    M7    : cost: 6
+		M8    M1    M5    M6    M2    
+
+Ord3:	M6    M1    M9    M4    M7    : cost: 3
+		M3    M8    M5    M10   M2    
+
+
+New:
+
+Ord1:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord2:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord3:	M4    M9    M6    M1    M7    : cost: 7
+		M8    M3    M2    M5    M10   
+
+
+
+
+
+
+Previous:
+
+Ord1:	M9    M3    M10   M4    M7    : cost: 6
+		M8    M1    M5    M6    M2    
+
+Ord2:	M6    M1    M9    M8    M7    : cost: 3
+		M3    M4    M5    M10   M2    
+
+
+New:
+
+Ord1:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord2:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord3:	M4    M9    M6    M1    M7    : cost: 7
+		M8    M3    M2    M5    M10   
+
+Ord4:	M6    M1    M9    M8    M7    : cost: 3
+		M3    M4    M5    M10   M2    
+
+
+
+
+
+
+Previous:
+
+Ord1:	M9    M3    M10   M4    M7    : cost: 6
+		M8    M1    M5    M6    M2    
+
+
+New:
+
+Ord1:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord2:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord3:	M4    M9    M6    M1    M7    : cost: 7
+		M8    M3    M2    M5    M10   
+
+Ord4:	M6    M1    M9    M8    M7    : cost: 3
+		M3    M5    M4    M10   M2    
+
+Ord5:	M6    M1    M9    M8    M7    : cost: 3
+		M3    M5    M4    M10   M2    
+
+
+
+
+
+
+Previous:
+
+
+New:
+
+Ord1:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord2:	M8    M7    M3    M2    M9    : cost: 5
+		M5    M10   M6    M1    M4    
+
+Ord3:	M4    M9    M6    M1    M7    : cost: 7
+		M8    M3    M2    M5    M10   
+
+Ord4:	M6    M1    M9    M8    M7    : cost: 3
+		M3    M5    M4    M10   M2    
+
+Ord5:	M6    M1    M9    M8    M7    : cost: 3
+		M3    M5    M4    M10   M2    
+
+Ord6:	M9    M3    M10   M4    M1    : cost: 6
+		M8    M7    M5    M6    M2    
+
+
+
+
+
+
+
+
+
+

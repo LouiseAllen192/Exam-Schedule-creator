@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4930fadd-b0bf-4890-8fe7-4cd408e92293" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/is14175819.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ExamScheduleCreator/Scheduler.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Scheduler.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/ExamScheduleCreator/is14175819.class" afterPath="$PROJECT_DIR$/out/production/ExamScheduleCreator/is14175819.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AI17.txt" afterPath="$PROJECT_DIR$/AI17.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/is14175819.java" afterPath="$PROJECT_DIR$/src/is14175819.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -24,16 +24,47 @@
       <file leaf-file-name="is14175819.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/is14175819.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-4456">
-              <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+            <state relative-caret-position="44">
+              <caret line="279" column="50" lean-forward="false" selection-start-line="279" selection-start-column="50" selection-end-line="279" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-                <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-                <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-                <element signature="e#9701#9702#0" expanded="true" />
-                <element signature="e#9738#9739#0" expanded="true" />
+                <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+                <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+                <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+                <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+                <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AI17.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/AI17.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="484">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,6 +87,16 @@
       <find>factorial</find>
       <find>getMaxPopulationSize</find>
       <find>printWarningForAdjustedPopulationSize</find>
+      <find>adjustPopulationSizeRelativeToTotalNumberOfModules</find>
+      <find>performSelection</find>
+      <find>requestInputs</find>
+      <find>isEven</find>
+      <find>getUserInput</find>
+      <find>applyGeneticAlgorithm</find>
+      <find>chooseTechnique</find>
+      <find>newOrderings</find>
+      <find>addNewLineToFile</find>
+      <find>getRandomIndexes</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,7 +142,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -130,8 +173,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -141,6 +182,8 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$USER_HOME$/TrafficFlowSimulation" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.gutterIcons" />
   </component>
   <component name="RunManager" selected="Application.is14175819">
     <configuration default="false" name="Scheduler" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -233,6 +276,9 @@
         <option name="SUPPORT_LIB_ENABLED" value="true" />
         <option name="INSTRUMENTATION_ENABLED" value="true" />
       </Profilers>
+      <method />
+    </configuration>
+    <configuration default="true" type="AntRunConfiguration" factoryName="Ant Target">
       <method />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
@@ -654,11 +700,14 @@
       <workItem from="1488543149383" duration="3000" />
       <workItem from="1488637307790" duration="11521000" />
       <workItem from="1488889438285" duration="10932000" />
+      <workItem from="1488998129362" duration="17000" />
+      <workItem from="1489492586614" duration="5033000" />
+      <workItem from="1489751382062" duration="19203000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48982000" />
+    <option name="totallyTimeSpent" value="73235000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="0" width="1932" height="1038" extended-state="0" />
@@ -667,26 +716,26 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32821077" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32741398" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7387486" sideWeight="0.15308255" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25194228" sideWeight="0.84691745" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22086571" sideWeight="0.84691745" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32930845" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15464994" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14785789" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39956093" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -703,7 +752,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -718,11 +767,76 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AI17.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1782">
+          <caret line="81" column="0" lean-forward="false" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/is14175819.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -733,11 +847,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -748,11 +883,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -763,11 +919,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -778,11 +955,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -793,11 +991,32 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -808,11 +1027,104 @@
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/is14175819.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/is14175819.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -827,23 +1139,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/AI17.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="20" lean-forward="true" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        <state relative-caret-position="484">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/is14175819.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4456">
-          <caret line="36" column="26" lean-forward="true" selection-start-line="36" selection-start-column="26" selection-end-line="36" selection-end-column="26" />
+        <state relative-caret-position="44">
+          <caret line="279" column="50" lean-forward="false" selection-start-line="279" selection-start-column="50" selection-end-line="279" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#isInteger#0;class#is14175819#0" expanded="false" />
-            <element signature="method#generateStudentModuleInfo#0;class#is14175819#0" expanded="false" />
-            <element signature="method#getRandomNumberInRange#0;class#is14175819#0" expanded="false" />
-            <element signature="e#9701#9702#0" expanded="true" />
-            <element signature="e#9738#9739#0" expanded="true" />
+            <element signature="method#ExamScheduleCreator#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#requestInputs#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#adjustPopulationSizeRelativeToTotalNumberOfModules#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getMaxPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#generateOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#createOrdering#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#isOrderingAlreadyInOrderingsList#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#recalculateFitnessCostOfOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#fitnessFunction#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#calculateFitnessCostForOneExamSession#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#studentTakesModule#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#performSelection#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#sortOrderingsOnFitnessCost#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="class#Technique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#getSecondUniqueRandomRowAndCol#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#chooseTechnique#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printStudentModuleInfo#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printOrderings#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#addNewLineToFile#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printHashMap#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#printWarningForAdjustedPopulationSize#0;class#ExamScheduleCreator#0" expanded="false" />
+            <element signature="method#UserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getUserInput#0;class#UserInput#0" expanded="false" />
+            <element signature="method#getErrorMsg#0;class#UserInput#0" expanded="false" />
+            <element signature="method#isInteger#0;class#UserInput#0" expanded="false" />
           </folding>
         </state>
       </provider>
