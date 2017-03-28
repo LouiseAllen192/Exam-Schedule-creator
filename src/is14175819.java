@@ -23,7 +23,20 @@ class ExamScheduleCreator {
     boolean populationSizeChanged;
 
     public ExamScheduleCreator() throws IOException {
-        inputs = requestInputs();
+        //inputs = requestInputs();
+
+        //TODO: remove before submission
+        inputs = new HashMap<>();
+        inputs.put("G", 150);
+        inputs.put("P", 30);
+        inputs.put("S", 80);
+        inputs.put("M", 36);
+        inputs.put("C", 5);
+        inputs.put("D", 18);
+        inputs.put("re", 80);
+        inputs.put("mu", 10);
+        inputs.put("cr", 10);
+
     }
 
     public void start() throws IOException {
@@ -36,24 +49,23 @@ class ExamScheduleCreator {
             populationSizeChanged = adjustPopulationSizeRelativeToTotalNumberOfModules(inputs, requestedPopulationSize);
 
             initialOrderings = generateOrderings(inputs, studentModuleInfo);
-            //printOrderings(initialOrderings);
 
             previousOrderings = initialOrderings;
+            sortOrderingsOnFitnessCost(previousOrderings);
 
             for (int i = 0; i < inputs.get("G"); i++) {
-                previousOrderings = performSelection(previousOrderings);
-                printOrderings(previousOrderings);
-                addNewLineToFile("\n\n\n\n");
+                performSelection(previousOrderings);
+                previousOrderings = applyGeneticAlgorithm(previousOrderings, inputs, studentModuleInfo);
+                recalculateFitnessCostOfOrderings(previousOrderings, studentModuleInfo);
 
-                newOrderings = applyGeneticAlgorithm(previousOrderings, inputs);
-                printOrderings(previousOrderings);
+                sortOrderingsOnFitnessCost(previousOrderings);
 
-                 addNewLineToFile("\n\n\n\n");
+                addNewLineToFile("\n\n");
+                printOrdering(previousOrderings.get(0), i);
+                addNewLineToFile("\n");
+
+
             }
-
-            // printOrderings(previousOrderings);
-
-            //printOrderings(newOrderings);
 
             if (populationSizeChanged) {
                 printWarningForAdjustedPopulationSize(requestedPopulationSize, inputs.get("P"), inputs.get("M"));
@@ -214,7 +226,7 @@ class ExamScheduleCreator {
             cost += calculateFitnessCostForOneExamSession(studentModuleInfo, session1, session2);
         }
 
-        ordering[ordering.length][0] = cost;
+        ordering[ordering.length - 1][0] = cost;
     }
 
     private int calculateFitnessCostForOneExamSession(ArrayList<HashSet<Integer>> studentModuleInfo, int exam1, int exam2) {
@@ -231,20 +243,32 @@ class ExamScheduleCreator {
         return studentModuleInfo.get(studentID).contains(moduleNumber);
     }
 
-    private ArrayList<int[][]> performSelection(ArrayList<int[][]> initialOrderings) {
-        sortOrderingsOnFitnessCost(initialOrderings);
+    private void performSelection(ArrayList<int[][]> orderings) {
+        if (orderings.size() > 3) {
+            int mod = orderings.size() % 3;
+            int divisionNumber = (int) Math.floor((orderings.size() + mod) / 3);
 
-        if (initialOrderings.size() > 3) {
-            int mod = initialOrderings.size() % 3;
-            int divisionNumber = (int) Math.floor((initialOrderings.size() + mod) / 3);
-
-            int startingIndex = initialOrderings.size() - divisionNumber;
+            int startingIndex = orderings.size() - divisionNumber;
             for (int i = 0; i < divisionNumber; i++) {
-                initialOrderings.set(startingIndex, initialOrderings.get(i));
+                orderings.set(startingIndex, copyMultiDimArray(orderings.get(i)));
                 startingIndex++;
             }
         }
-        return initialOrderings;
+    }
+
+    private int[][] copyMultiDimArray(int[][] old) {
+        int numExamDays = old.length - 1;
+        int[][] copy = new int[old.length][2];
+
+        for(int i = 0; i < old.length - 1; i++) {
+            copy[i][0] = old[i][0];
+            copy[i][1] = old[i][1];
+        }
+
+        copy[numExamDays][0] = old[numExamDays][0];
+        copy[numExamDays][1] = 0;
+
+        return copy;
     }
 
     private void sortOrderingsOnFitnessCost(ArrayList<int[][]> initialOrderings) {
@@ -263,42 +287,158 @@ class ExamScheduleCreator {
        REPRODUCTION, CROSSOVER, MUTATION
     }
 
-    private ArrayList<int[][]> applyGeneticAlgorithm(ArrayList<int[][]> previousOrderings, HashMap<String, Integer> inputs) throws IOException {
+    private ArrayList<int[][]> applyGeneticAlgorithm(ArrayList<int[][]> previousOrderings, HashMap<String, Integer> inputs, ArrayList<HashSet<Integer>> studentModuleInfo) throws IOException {
         ArrayList<int[][]> orderingsPostGenAlg = new ArrayList<>();
 
         while (previousOrderings.size() > 0) {
-            //Technique technique = chooseTechnique(inputs.get("re"), inputs.get("mu"), inputs.get("cr"));
-            Technique technique = Technique.CROSSOVER;
+            Technique technique = chooseTechnique(inputs.get("re"), inputs.get("mu"), inputs.get("cr"));
+            int[][] newOrdering = null;
+            int[][] newOrdering2 = null;
 
             int[] randomIndexes = getRandomIndexes(previousOrderings.size() -1);
             int randomIndexOfOrdering1 = randomIndexes[0];
             int randomIndexOfOrdering2 = randomIndexes[1];
 
+            //System.out.print("\ntechnique: " + technique + "     ");
+            //System.out.print("index: " + randomIndexOfOrdering1 + "  /  ");
+
             switch (technique) {
                 case CROSSOVER:
-                    if (previousOrderings.size() != 1) {
-                        //TODO: Continue from here
+                    if (previousOrderings.size() != 1 && isOrderingLargeEnoughForCrossover(previousOrderings.get(0))) {
+                        //System.out.println("index2: " + randomIndexOfOrdering2);
+
+                        ArrayList<int[][]> postCrossoverOrderings = applyCrossover(previousOrderings.get(randomIndexOfOrdering1), previousOrderings.get(randomIndexOfOrdering2));
+                        newOrdering = postCrossoverOrderings.get(0);
+                        newOrdering2 = postCrossoverOrderings.get(1);
+
+                        fitnessFunction(newOrdering, studentModuleInfo);
+                        fitnessFunction(newOrdering2, studentModuleInfo);
+                        orderingsPostGenAlg.add(newOrdering);
+                        orderingsPostGenAlg.add(newOrdering2);
+                        if (randomIndexOfOrdering1 > randomIndexOfOrdering2) {
+                            previousOrderings.remove(randomIndexOfOrdering1);
+                            previousOrderings.remove(randomIndexOfOrdering2);
+                        } else {
+                            previousOrderings.remove(randomIndexOfOrdering2);
+                            previousOrderings.remove(randomIndexOfOrdering1);
+                        }
                     }
                     break;
                 case MUTATION:
-                    orderingsPostGenAlg.add(applyMutation(previousOrderings.get(randomIndexOfOrdering1)));
+                    newOrdering  = applyMutation(previousOrderings.get(randomIndexOfOrdering1));
+                    fitnessFunction(newOrdering, studentModuleInfo);
+                    orderingsPostGenAlg.add(newOrdering);
                     previousOrderings.remove(randomIndexOfOrdering1);
                     break;
                 case REPRODUCTION:
-                    orderingsPostGenAlg.add(previousOrderings.get(randomIndexOfOrdering1));
+                    newOrdering = previousOrderings.get(randomIndexOfOrdering1);
+                    fitnessFunction(newOrdering, studentModuleInfo);
+                    orderingsPostGenAlg.add(newOrdering);
                     previousOrderings.remove(randomIndexOfOrdering1);
                     break;
             }
 
-            addNewLineToFile("Previous:\n");
+
+            /*addNewLineToFile("Previous:\n");
             printOrderings(previousOrderings);
             addNewLineToFile("\n\n");
             addNewLineToFile("New:\n");
             printOrderings(orderingsPostGenAlg);
             addNewLineToFile("\n\n");
-            addNewLineToFile("\n\n\n\n");
+            addNewLineToFile("\n\n\n\n");*/
         }
+
         return orderingsPostGenAlg;
+    }
+
+    private boolean isOrderingLargeEnoughForCrossover(int[][] ordering) {
+        int numRows = ordering.length - 1;
+
+        // Crossover can only be performed if the ordering has a length of 5 or greater
+        return (numRows >= 4);
+    }
+
+    private ArrayList<int[][]> applyCrossover(int[][] o1, int[][] o2) {
+        boolean left;
+        ArrayList<int[][]> postCrossoverOrdering;
+        int numDays, numModules, randomCuttingPoint;
+        HashMap<Integer, Integer> swapNums1;
+        HashMap<Integer, Integer> swapNums2;
+
+        left = true;
+        postCrossoverOrdering = new ArrayList();
+        numDays = o1.length - 1;
+        numModules = numDays * 2;
+        randomCuttingPoint = getRandomNumberInRange(numModules - 2, 2);
+        //System.out.println(randomCuttingPoint);
+        swapNums1 = new HashMap<>();
+        swapNums2 = new HashMap<>();
+
+        if (randomCuttingPoint >= numDays) {
+            left = false;
+            randomCuttingPoint -= numDays;
+        }
+
+        if (left) {
+            for (int i = 0; i < randomCuttingPoint; i++) {
+                swapNums1.put(o1[i][0], i);
+                swapNums2.put(o2[i][0], i);
+                swapElements(o1, o2, i, 0);
+            }
+        } else {
+            for (int i = randomCuttingPoint; i < numDays; i++) {
+                swapNums1.put(o1[i][1], i);
+                swapNums2.put(o2[i][1], i);
+                swapElements(o1, o2, i, 1);
+            }
+        }
+
+        removeDuplicates(o1, o2, swapNums1, swapNums2, left);
+
+        postCrossoverOrdering.add(o1);
+        postCrossoverOrdering.add(o2);
+        return postCrossoverOrdering;
+    }
+
+    private void removeDuplicates(int[][] o1, int[][] o2, HashMap<Integer, Integer> swap1, HashMap<Integer, Integer> swap2, boolean left) {
+        ArrayList<Integer> duplicateIndexes1 = new ArrayList<>();
+        ArrayList<Integer> duplicateIndexes2 = new ArrayList<>();
+        int colNum;
+        colNum = (left) ? 0 : 1;
+        createDuplicateSets(duplicateIndexes1, duplicateIndexes2, swap1, swap2);
+
+        if (duplicateIndexes1.size() > 0) {
+            //duplicateIndexes1 and duplicateIndexes2 will always be the same size
+            for (int i = 0; i < duplicateIndexes1.size(); i++) {
+                int rowNum1 = duplicateIndexes1.get(i);
+                int rowNum2 = duplicateIndexes2.get(i);
+
+                int temp = o2[rowNum1][colNum];
+                o2[rowNum1][colNum] = o1[rowNum2][colNum];
+                o1[rowNum2][colNum] = temp;
+            }
+        }
+
+    }
+
+    private void createDuplicateSets(ArrayList<Integer> dups1, ArrayList<Integer> dups2, HashMap<Integer, Integer> swap1, HashMap<Integer, Integer> swap2) {
+        //add rowNumber of duplicate to two duplicate arrayLists. These will then be swapped after
+        for (Map.Entry<Integer, Integer> entry : swap1.entrySet()) {
+            if (swap2.get(entry.getKey()) == null) {
+                dups1.add(entry.getValue());
+            }
+        }
+        for (Map.Entry<Integer, Integer> entry : swap2.entrySet()) {
+            if (swap1.get(entry.getKey()) == null) {
+                dups2.add(entry.getValue());
+            }
+        }
+    }
+
+    private void swapElements(int[][] o1, int[][] o2, int index, int colNum) {
+        int temp = o1[index][colNum];
+        o1[index][colNum] = o2[index][colNum];
+        o2[index][colNum] = temp;
     }
 
     private int[][] applyMutation(int[][] ordering) {
@@ -316,7 +456,7 @@ class ExamScheduleCreator {
         ordering[randomRow1][randomCol1] = ordering[randomRow2][randomCol2];
         ordering[randomRow2][randomCol2] = temp;
 
-        System.out.println("Swapping [" + randomRow1 + "," + randomCol1 + "] with [" + randomRow2 + "," + randomCol2 + "]");
+       // System.out.println("Swapping [" + randomRow1 + "," + randomCol1 + "] with [" + randomRow2 + "," + randomCol2 + "]");
 
         return ordering;
     }
@@ -347,7 +487,6 @@ class ExamScheduleCreator {
     }
 
     private int[] getRandomIndexes(int max) {
-
         int[] randIndexes = new int[2];
         boolean valid = false;
         int randomIndexOfOrdering_1, randomIndexOfOrdering_2;
@@ -355,12 +494,16 @@ class ExamScheduleCreator {
         if (max == 0) {
             randIndexes[0] = 0;
             randIndexes[1] = 0;
+        } else if (max == 1) {
+            randIndexes[0] = 0;
+            randIndexes[1] = 1;
         } else {
             randomIndexOfOrdering_1 = getRandomNumberInRange(max, 0);
             randomIndexOfOrdering_2 = 0;
 
             while (!valid) {
-                randomIndexOfOrdering_2 = getRandomNumberInRange(max, 0);
+                //Will always be one less than max. After we remove the first element the indexes will shrink by 1
+                randomIndexOfOrdering_2 = getRandomNumberInRange(max - 1, 0);
 
                 if (randomIndexOfOrdering_1 != randomIndexOfOrdering_2) {
                     valid = true;
@@ -376,7 +519,6 @@ class ExamScheduleCreator {
 
     private Technique chooseTechnique(int reproduction, int mutation, int crossover) {
         int randomNumber = getRandomNumberInRange(100, 1);
-
         if (randomNumber < reproduction) {
             return Technique.REPRODUCTION;
         } else if (randomNumber < crossover +  reproduction) {
@@ -511,8 +653,7 @@ class UserInput {
                     }
                     if (id == 6) {
                         int crossOverPercentage = (100 - (number + UserInput.percentageChanceOfReproduction));
-                        System.out.println("Percentage chances:\nReproduction:" + UserInput.percentageChanceOfReproduction +
-                                            "\nMutation:" + number + "\nCrossover:" + crossOverPercentage + "\n\n");
+                        //todo
                     }
                 } else {
                     System.out.println(errorMessage);

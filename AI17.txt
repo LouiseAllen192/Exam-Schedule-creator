@@ -1,204 +1,980 @@
-Student 1: M2 M4 M6 M8 
-Student 2: M1 M3 M5 M6 
-Student 3: M1 M3 M4 M5 
-Student 4: M3 M4 M7 M8 
-Student 5: M2 M3 M4 M9 
-Student 6: M1 M6 M7 M9 
-Student 7: M1 M2 M4 M6 
-Student 8: M3 M5 M8 M10 
-Student 9: M2 M7 M9 M10 
-Student 10: M3 M4 M7 M10 
+Student 1: M21 M6 M22 M23 M13 
+Student 2: M2 M20 M36 M22 M13 
+Student 3: M36 M21 M6 M7 M29 
+Student 4: M17 M18 M5 M23 M10 
+Student 5: M18 M5 M7 M24 M9 
+Student 6: M5 M7 M24 M9 M26 
+Student 7: M32 M5 M6 M28 M31 
+Student 8: M16 M21 M24 M8 M12 
+Student 9: M1 M19 M21 M26 M29 
+Student 10: M33 M35 M19 M36 M31 
+Student 11: M34 M8 M28 M30 M31 
+Student 12: M16 M3 M19 M5 M25 
+Student 13: M33 M36 M6 M11 M15 
+Student 14: M34 M20 M7 M8 M9 
+Student 15: M16 M5 M22 M6 M26 
+Student 16: M1 M6 M28 M29 M14 
+Student 17: M32 M36 M21 M8 M28 
+Student 18: M16 M1 M2 M3 M7 
+Student 19: M1 M33 M18 M7 M14 
+Student 20: M16 M34 M24 M28 M15 
+Student 21: M20 M10 M26 M29 M15 
+Student 22: M21 M25 M10 M29 M31 
+Student 23: M6 M22 M10 M12 M31 
+Student 24: M32 M16 M4 M25 M11 
+Student 25: M35 M22 M7 M28 M29 
+Student 26: M34 M3 M20 M21 M31 
+Student 27: M18 M21 M9 M30 M15 
+Student 28: M32 M3 M5 M28 M14 
+Student 29: M1 M4 M21 M22 M25 
+Student 30: M1 M19 M21 M27 M30 
+Student 31: M35 M8 M9 M26 M15 
+Student 32: M16 M6 M23 M26 M13 
+Student 33: M17 M3 M21 M13 M15 
+Student 34: M33 M2 M35 M4 M26 
+Student 35: M36 M22 M12 M14 M31 
+Student 36: M7 M25 M9 M10 M29 
+Student 37: M36 M6 M7 M9 M14 
+Student 38: M18 M7 M9 M30 M31 
+Student 39: M1 M34 M19 M20 M12 
+Student 40: M35 M5 M25 M29 M14 
+Student 41: M16 M34 M3 M20 M21 
+Student 42: M2 M3 M21 M5 M30 
+Student 43: M18 M5 M22 M23 M29 
+Student 44: M2 M23 M9 M10 M28 
+Student 45: M32 M17 M4 M27 M13 
+Student 46: M17 M18 M20 M25 M15 
+Student 47: M1 M34 M20 M23 M14 
+Student 48: M32 M20 M5 M22 M30 
+Student 49: M16 M33 M20 M21 M11 
+Student 50: M33 M22 M26 M11 M12 
+Student 51: M16 M22 M24 M9 M27 
+Student 52: M32 M18 M34 M4 M5 
+Student 53: M18 M24 M9 M26 M14 
+Student 54: M16 M3 M24 M9 M14 
+Student 55: M1 M34 M20 M24 M14 
+Student 56: M17 M3 M36 M20 M11 
+Student 57: M33 M7 M23 M24 M15 
+Student 58: M20 M36 M23 M27 M14 
+Student 59: M32 M1 M22 M25 M12 
+Student 60: M1 M2 M21 M22 M25 
+Student 61: M3 M10 M29 M30 M15 
+Student 62: M33 M8 M25 M11 M30 
+Student 63: M18 M35 M20 M36 M14 
+Student 64: M18 M21 M7 M23 M25 
+Student 65: M17 M34 M2 M25 M31 
+Student 66: M33 M24 M25 M26 M28 
+Student 67: M17 M35 M6 M25 M10 
+Student 68: M17 M2 M5 M28 M12 
+Student 69: M3 M19 M28 M29 M14 
+Student 70: M17 M36 M23 M26 M15 
+Student 71: M1 M34 M9 M28 M30 
+Student 72: M20 M27 M28 M29 M30 
+Student 73: M17 M35 M20 M36 M8 
+Student 74: M33 M35 M7 M28 M12 
+Student 75: M16 M33 M2 M6 M29 
+Student 76: M33 M35 M26 M15 M31 
+Student 77: M16 M19 M3 M20 M36 
+Student 78: M33 M3 M5 M26 M29 
+Student 79: M4 M6 M10 M28 M13 
+Student 80: M17 M23 M24 M26 M31 
 
-Ord1:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
 
-Ord2:	M8    M7    M3    M10   M9    : cost: 5
-		M5    M1    M6    M2    M4    
 
-Ord3:	M9    M3    M10   M4    M7    : cost: 6
-		M8    M1    M5    M6    M2    
+Ord1:	M8    M27   M34   M19   M6    M7    M16   M35   M22   M30   M13   M23   M20   M9    M5    M29   M1    M21   : cost: 16
+		M33   M36   M2    M10   M3    M15   M12   M31   M28   M25   M24   M18   M4    M17   M14   M32   M26   M11   
 
-Ord4:	M4    M9    M1    M6    M7    : cost: 7
-		M8    M3    M2    M5    M10   
 
-Ord5:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
 
-Ord6:	M8    M7    M3    M10   M9    : cost: 5
-		M5    M1    M6    M2    M4    
 
+Ord2:	M33   M29   M24   M30   M17   M20   M10   M14   M31   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 14
+		M23   M16   M1    M12   M2    M28   M36   M7    M13   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
 
 
-Previous:
 
-Ord1:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
+Ord3:	M33   M29   M24   M30   M17   M20   M10   M14   M31   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 14
+		M23   M16   M1    M12   M2    M28   M36   M7    M13   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Ord2:	M8    M7    M3    M1    M9    : cost: 5
-		M5    M10   M6    M2    M4    
 
-Ord3:	M9    M3    M10   M4    M7    : cost: 6
-		M8    M1    M5    M6    M2    
 
-Ord4:	M4    M9    M1    M6    M7    : cost: 7
-		M8    M3    M2    M5    M10   
 
-Ord5:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
+Ord4:	M33   M29   M24   M30   M17   M20   M10   M14   M31   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 14
+		M23   M16   M1    M12   M2    M28   M36   M7    M13   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
 
-New:
 
-Ord1:	M8    M7    M3    M1    M9    : cost: 5
-		M5    M10   M6    M2    M4    
 
+Ord5:	M33   M29   M24   M30   M17   M20   M10   M14   M31   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 14
+		M23   M16   M1    M12   M2    M28   M36   M7    M13   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
 
 
 
+Ord6:	M33   M29   M24   M30   M17   M20   M10   M14   M31   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 14
+		M23   M16   M1    M12   M2    M28   M36   M7    M13   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Previous:
 
-Ord1:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
 
-Ord2:	M9    M3    M10   M4    M7    : cost: 6
-		M8    M1    M5    M6    M2    
 
-Ord3:	M4    M9    M1    M6    M7    : cost: 7
-		M8    M3    M2    M5    M10   
+Ord7:	M33   M29   M24   M30   M17   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 14
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Ord4:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
 
 
-New:
 
-Ord1:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
+Ord8:	M33   M29   M16   M30   M17   M20   M10   M14   M31   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 13
+		M23   M24   M1    M12   M2    M28   M36   M7    M13   M18   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Ord2:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
 
 
+Ord9:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M11   M27   
 
 
 
-Previous:
 
-Ord1:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
+Ord10:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Ord2:	M9    M3    M10   M4    M7    : cost: 6
-		M8    M1    M5    M6    M2    
 
-Ord3:	M6    M1    M9    M4    M7    : cost: 3
-		M3    M8    M5    M10   M2    
 
 
-New:
+Ord11:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Ord1:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
-Ord2:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
-Ord3:	M4    M9    M6    M1    M7    : cost: 7
-		M8    M3    M2    M5    M10   
 
+Ord12:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M11   M27   
 
 
 
 
+Ord13:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Previous:
 
-Ord1:	M9    M3    M10   M4    M7    : cost: 6
-		M8    M1    M5    M6    M2    
 
-Ord2:	M6    M1    M9    M8    M7    : cost: 3
-		M3    M4    M5    M10   M2    
 
+Ord14:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M11   M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M5    M27   
 
-New:
 
-Ord1:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
-Ord2:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
-Ord3:	M4    M9    M6    M1    M7    : cost: 7
-		M8    M3    M2    M5    M10   
+Ord15:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 12
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M15   M3    M11   M27   
 
-Ord4:	M6    M1    M9    M8    M7    : cost: 3
-		M3    M4    M5    M10   M2    
 
 
 
+Ord16:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 11
+		M23   M15   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M16   M3    M11   M27   
 
 
 
-Previous:
 
-Ord1:	M9    M3    M10   M4    M7    : cost: 6
-		M8    M1    M5    M6    M2    
+Ord17:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 11
+		M23   M15   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M16   M3    M11   M27   
 
 
-New:
 
-Ord1:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
-Ord2:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
+Ord18:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 11
+		M23   M15   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M16   M3    M11   M27   
 
-Ord3:	M4    M9    M6    M1    M7    : cost: 7
-		M8    M3    M2    M5    M10   
 
-Ord4:	M6    M1    M9    M8    M7    : cost: 3
-		M3    M5    M4    M10   M2    
 
-Ord5:	M6    M1    M9    M8    M7    : cost: 3
-		M3    M5    M4    M10   M2    
 
+Ord19:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 11
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M15   M21   M6    M3    M11   M27   
 
 
 
 
+Ord20:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 11
+		M23   M15   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M16   M3    M11   M27   
 
-Previous:
 
 
-New:
 
-Ord1:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
+Ord21:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 11
+		M23   M15   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M16   M3    M11   M27   
 
-Ord2:	M8    M7    M3    M2    M9    : cost: 5
-		M5    M10   M6    M1    M4    
 
-Ord3:	M4    M9    M6    M1    M7    : cost: 7
-		M8    M3    M2    M5    M10   
 
-Ord4:	M6    M1    M9    M8    M7    : cost: 3
-		M3    M5    M4    M10   M2    
 
-Ord5:	M6    M1    M9    M8    M7    : cost: 3
-		M3    M5    M4    M10   M2    
+Ord22:	M33   M29   M24   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 10
+		M23   M16   M1    M12   M27   M28   M36   M7    M31   M17   M25   M4    M15   M21   M6    M3    M11   M2    
 
-Ord6:	M9    M3    M10   M4    M1    : cost: 6
-		M8    M7    M5    M6    M2    
 
 
 
+Ord23:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 10
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M15   M21   M6    M3    M11   M24   
 
 
 
 
+Ord24:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 10
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M15   M21   M6    M3    M11   M24   
 
 
+
+
+Ord25:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 9
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord26:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M34   M9    M8    M19   M26   M35   M22   M5    M32   : cost: 9
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord27:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord28:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord29:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord30:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord31:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord32:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord33:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord34:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord35:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord36:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord37:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord38:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord39:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord40:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord41:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord42:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord43:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord44:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord45:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord46:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 8
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord47:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord48:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord49:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord50:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord51:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord52:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord53:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord54:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord55:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord56:	M33   M29   M27   M30   M18   M20   M10   M13   M14   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 7
+		M23   M16   M1    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord57:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord58:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord59:	M33   M29   M27   M7    M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 7
+		M23   M16   M1    M12   M2    M28   M36   M30   M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord60:	M33   M29   M27   M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord61:	M33   M29   M27   M12   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M5    M32   : cost: 7
+		M23   M16   M1    M30   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord62:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 7
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord63:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 6
+		M23   M12   M5    M16   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord64:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 6
+		M23   M12   M5    M16   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord65:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 6
+		M23   M12   M5    M16   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord66:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord67:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord68:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord69:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord70:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord71:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord72:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord73:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord74:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord75:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord76:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord77:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 5
+		M23   M16   M5    M12   M2    M28   M36   M7    M31   M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord78:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M4    M7    M17   M25   M31   M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord79:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord80:	M33   M29   M1    M30   M18   M20   M10   M14   M13   M19   M9    M8    M34   M26   M35   M22   M27   M32   : cost: 5
+		M23   M12   M5    M16   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M15   
+
+
+
+
+Ord81:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord82:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord83:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord84:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord85:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord86:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord87:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord88:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord89:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord90:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord91:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord92:	M19   M30   M36   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M27   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord93:	M35   M30   M13   M15   M18   M20   M10   M14   M27   M33   M9    M8    M34   M26   M19   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord94:	M19   M30   M13   M15   M18   M20   M10   M14   M27   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord95:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord96:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord97:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord98:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord99:	M19   M30   M13   M15   M18   M20   M10   M14   M27   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord100:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord101:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M4    M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M22   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord102:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord103:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord104:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord105:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord106:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M4    M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M22   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord107:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M4    M25   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord108:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord109:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M4    M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M22   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord110:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord111:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord112:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord113:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M4    M1    M32   : cost: 4
+		M23   M16   M5    M2    M12   M28   M36   M31   M7    M17   M25   M22   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord114:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord115:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord116:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord117:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M25   M4    M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord118:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M4    M25   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord119:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 4
+		M23   M16   M5    M12   M2    M28   M36   M31   M7    M17   M4    M25   M6    M21   M24   M3    M11   M29   
+
+
+
+
+Ord120:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord121:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord122:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord123:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord124:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord125:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord126:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord127:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord128:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord129:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord130:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord131:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord132:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord133:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord134:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord135:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord136:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord137:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord138:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord139:	M19   M30   M5    M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M27   M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord140:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord141:	M19   M30   M5    M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M27   M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord142:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord143:	M19   M30   M5    M15   M18   M20   M10   M14   M13   M33   M8    M9    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M27   M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord144:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord145:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord146:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord147:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord148:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord149:	M19   M30   M27   M15   M18   M20   M10   M14   M13   M33   M9    M8    M34   M26   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
+
+
+
+
+Ord150:	M19   M30   M27   M15   M18   M20   M10   M26   M13   M33   M9    M8    M34   M14   M35   M22   M1    M32   : cost: 3
+		M23   M16   M5    M12   M2    M28   M36   M11   M7    M17   M25   M4    M6    M21   M24   M3    M31   M29   
 
